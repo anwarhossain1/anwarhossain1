@@ -22,4 +22,4 @@
 
 <br />
 <br />
-[![Anwar's GitHub stats](https://github-readme-stats.vercel.app/api?username=anwarhossain1)](https://github.com/anuraghazra/github-readme-stats)
+![Anwar's GitHub stats](https://github-readme-stats.vercel.app/api?username=anwarhossain1&show_icons=true)

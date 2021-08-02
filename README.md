@@ -22,4 +22,4 @@
 
 <br />
 <br />
-![Anwar's GitHub stats](https://github-readme-stats.vercel.app/api?username=anwarhossain1&show_icons=true)
+<img align="left" alt="Anwar's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=anwarhossain1&show_icons=true&hide_border=true"/>

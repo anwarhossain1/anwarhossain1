@@ -60,10 +60,6 @@
 <code><img height="30" width="30" src="./img/icons/next-js.svg"></code>
 
 <br />
-<br />
-
-<br />
-<br />
 
 ### 📊 My Github Stats
 

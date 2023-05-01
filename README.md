@@ -9,6 +9,26 @@
 
 <br/>
 
+### 📲 Connect With Me:
+
+<a href="https://www.linkedin.com/in/anwarhossain1/" target="_blank">
+<img align="left" src="./img/main/linkedin.png" height="30" width="30px" />
+</a>
+<a href="mailto:irishkhan33@gmail.com">
+<img align="left" src="./img/main/gmail.png" height="30" width="30px" />
+</a>
+<!-- <a href="https://twitter.com/indranilcoder/" target="_blank">
+<img align="left" src="./img/main/twitter.png" height="30" width="30px" />
+</a> -->
+<!-- <a href="https://www.instagram.com/indranil__halder/" target="_blank">
+<img align="left" src="./img/main/instagram.png" height="30" width="30px" />
+</a> -->
+<a href="https://www.facebook.com/anwarirish" target="_blank">
+<img align="left" src="./img/main/facebook.png" height="30" width="30px" />
+</a>
+
+<br />
+
 ### Languages and Tools I Have Used So Far:
 
 <!-- [<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />]
@@ -25,14 +45,18 @@
 <code><img height="30" width="30" src="./img/icons/javascript.svg"></code>
 <code><img height="30" width="30" src="./img/icons/nodejs.svg"></code>
 <code><img height="30" width="30" src="./img/icons/python.svg"></code>
-<code><img height="30" width="30" src="./img/icons/django.svg"></code>
+
+<!-- <code><img height="30" width="30" src="./img/icons/django.svg"></code> -->
+
 <code><img height="30" width="30" src="./img/icons/sass.svg"></code>
 <code><img height="30" width="30" src="./img/icons/bootstrap-5.svg"></code>
 <code><img height="30" width="30" src="./img/icons/tailwind.svg"></code>
 <code><img height="30" width="30" src="./img/icons/react.svg"></code>
 <code><img height="30" width="30" src="./img/icons/redux.svg"></code>
 <code><img height="30" width="30" src="./img/icons/material.svg"></code>
-<code><img height="30" width="30" src="./img/icons/gatsby.svg"></code>
+
+<!-- <code><img height="30" width="30" src="./img/icons/gatsby.svg"></code> -->
+
 <code><img height="30" width="30" src="./img/icons/next-js.svg"></code>
 
 <br />

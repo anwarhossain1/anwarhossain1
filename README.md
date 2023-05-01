@@ -1,6 +1,6 @@
 ### Hi! I am Anwar Hossain, Professional React Developer And Mern Enthusiats.
 
-- Currently I am trying to enrich my knowledge in Modern Web Applications
+- Simple intro about myself is, i am an explorer.
 - 🧠 I like to think.
 - 🖥️ I love to code.
 - 📚 I love to read books.
@@ -11,14 +11,29 @@
 
 ### Languages and Tools I Have Used So Far:
 
-[<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />]
+<!-- [<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />]
 [<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />]
 [<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />]
 [<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />]
 [<img align="left" alt="React" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />]
 [<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />]
 [<img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />]
-[<img align="left" alt="Terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />]
+[<img align="left" alt="Terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />] -->
+
+<code><img height="30" width="30" src="./img/icons/html5.svg"></code>
+<code><img height="30" width="30" src="./img/icons/css-3.png"></code>
+<code><img height="30" width="30" src="./img/icons/javascript.svg"></code>
+<code><img height="30" width="30" src="./img/icons/nodejs.svg"></code>
+<code><img height="30" width="30" src="./img/icons/python.svg"></code>
+<code><img height="30" width="30" src="./img/icons/django.svg"></code>
+<code><img height="30" width="30" src="./img/icons/sass.svg"></code>
+<code><img height="30" width="30" src="./img/icons/bootstrap-5.svg"></code>
+<code><img height="30" width="30" src="./img/icons/tailwind.svg"></code>
+<code><img height="30" width="30" src="./img/icons/react.svg"></code>
+<code><img height="30" width="30" src="./img/icons/redux.svg"></code>
+<code><img height="30" width="30" src="./img/icons/material.svg"></code>
+<code><img height="30" width="30" src="./img/icons/gatsby.svg"></code>
+<code><img height="30" width="30" src="./img/icons/next-js.svg"></code>
 
 <br />
 <br />

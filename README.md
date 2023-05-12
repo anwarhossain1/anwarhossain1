@@ -1,4 +1,4 @@
-### Hi! I am Anwar Hossain, Professional React Developer And Mern Enthusiats.
+### Hi! I am Anwar Hossain, A Professional React Developer.
 
 - Simple intro about myself is, i am an explorer.
 - 🧠 I like to think.

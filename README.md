@@ -1,11 +1,11 @@
-### Hi! I am Anwar Hossain, A Professional React Developer.
+### Hi! I am Anwar Hossain, A Software Engineer experienced in NextJS, ReactJS, TailwindCss, MaterialUi, Redux, Styled Components, JavaScript, TypeScript, ExpressJs, Nodejs and so on related to web technologies.
 
-- Simple intro about myself is, i am an explorer.
+A simple intro about myself is, that I am an explorer.
 - 🧠 I like to think.
 - 🖥️ I love to code.
 - 📚 I love to read books.
 - 🏍️ I am also a moto-rider 😉
-- 🏴‍☠️ My Motto ➡️ 🗺️ "Let's Build An Another World" 🗺️
+- 🏴‍☠️ My Motto ➡️ 🗺️ "Let's Build Another World" 🗺️
 
 <br/>
 

@@ -1,67 +1,66 @@
-### Hi! I am Anwar Hossain, A Software Engineer experienced in NextJS, ReactJS, TailwindCss, MaterialUi, Redux, Styled Components, JavaScript, TypeScript, ExpressJs, Nodejs and so on related to web technologies.
+# Hi 👋 I’m Anwar Hossain  
+## Full Stack Engineer (MERN Focused)
 
-A simple intro about myself is, that I am an explorer.
-- 🧠 I like to think.
-- 🖥️ I love to code.
-- 📚 I love to read books.
-- 🏍️ I am also a moto-rider 😉
-- 🏴‍☠️ My Motto ➡️ 🗺️ "Let's Build Another World" 🗺️
+I specialize in building scalable, production-ready web applications using the **MERN stack** — MongoDB, Express.js, React.js, and Node.js — along with modern frontend technologies and backend architecture best practices.
 
-<br/>
+I work across the full development lifecycle — from designing REST APIs and database schemas to building responsive UIs and deploying applications.
 
-### 📲 Connect With Me:
+---
 
-<a href="https://www.linkedin.com/in/anwarhossain1/" target="_blank">
-<img align="left" src="./img/main/linkedin.png" height="30" width="30px" />
-</a>
-<a href="mailto:irishkhan33@gmail.com">
-<img align="left" src="./img/main/gmail.png" height="30" width="30px" />
-</a>
-<!-- <a href="https://twitter.com/indranilcoder/" target="_blank">
-<img align="left" src="./img/main/twitter.png" height="30" width="30px" />
-</a> -->
-<!-- <a href="https://www.instagram.com/indranil__halder/" target="_blank">
-<img align="left" src="./img/main/instagram.png" height="30" width="30px" />
-</a> -->
-<a href="https://www.facebook.com/anwarirish" target="_blank">
-<img align="left" src="./img/main/facebook.png" height="30" width="30px" />
-</a>
+## 🔹 Core Stack
 
-<br />
+**Frontend:** ReactJS, NextJS, TailwindCSS, Material UI, Redux, Styled Components  
+**Backend:** Node.js, Express.js  
+**Database:** MongoDB  
+**Languages:** JavaScript, TypeScript  
+**Other Tools:** REST APIs, JWT Authentication, Git, VPS Deployment  
 
-### Languages and Tools I Have Used So Far:
+---
 
-<!-- [<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />]
-[<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />]
-[<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />]
-[<img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />]
-[<img align="left" alt="React" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />]
-[<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />]
-[<img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />]
-[<img align="left" alt="Terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />] -->
+## 👨‍💻 A Simple Intro About Me
 
-<code><img height="30" width="30" src="./img/icons/html5.svg"></code>
-<code><img height="30" width="30" src="./img/icons/css-3.png"></code>
-<code><img height="30" width="30" src="./img/icons/javascript.svg"></code>
-<code><img height="30" width="30" src="./img/icons/nodejs.svg"></code>
-<code><img height="30" width="30" src="./img/icons/python.svg"></code>
+I am an explorer — not just in tech, but in life.
 
-<!-- <code><img height="30" width="30" src="./img/icons/django.svg"></code> -->
+- 🧠 I like to think deeply and solve problems.  
+- 🖥️ I love to design and build full-stack systems.  
+- 📚 I love to read books and expand my perspective.  
+- 🏍️ I am also a moto-rider 😉  
+- 🏴‍☠️ **My Motto:** 🗺️ *"Let's Build Another World"* 🗺️  
 
-<code><img height="30" width="30" src="./img/icons/sass.svg"></code>
-<code><img height="30" width="30" src="./img/icons/bootstrap-5.svg"></code>
-<code><img height="30" width="30" src="./img/icons/tailwind.svg"></code>
-<code><img height="30" width="30" src="./img/icons/react.svg"></code>
-<code><img height="30" width="30" src="./img/icons/redux.svg"></code>
-<code><img height="30" width="30" src="./img/icons/material.svg"></code>
+---
 
-<!-- <code><img height="30" width="30" src="./img/icons/gatsby.svg"></code> -->
+## 📲 Connect With Me
 
-<code><img height="30" width="30" src="./img/icons/next-js.svg"></code>
+[![LinkedIn](./img/main/linkedin.png)](https://www.linkedin.com/in/anwarhossain1/)  
+[![Gmail](./img/main/gmail.png)](mailto:irishkhan33@gmail.com)  
+[![Facebook](./img/main/facebook.png)](https://www.facebook.com/anwarirish)
 
-<br />
+---
 
-### 📊 My Github Stats
+## 🛠 Languages and Tools
 
-| ![Indranil's GitHub stats](https://github-readme-stats.vercel.app/api?username=anwarhossain1&theme=tokyonight&show_icons=true) | [![Anwar's GitHub Streak](https://streak-stats.demolab.com?user=anwarhossain1&theme=tokyonight)](https://git.io/streak-stats) |
-| ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+<p align="left">
+  <img height="30" width="30" src="./img/icons/html5.svg" />
+  <img height="30" width="30" src="./img/icons/css-3.png" />
+  <img height="30" width="30" src="./img/icons/javascript.svg" />
+  <img height="30" width="30" src="./img/icons/typescript.svg" />
+  <img height="30" width="30" src="./img/icons/nodejs.svg" />
+  <img height="30" width="30" src="./img/icons/express.svg" />
+  <img height="30" width="30" src="./img/icons/mongodb.svg" />
+  <img height="30" width="30" src="./img/icons/react.svg" />
+  <img height="30" width="30" src="./img/icons/next-js.svg" />
+  <img height="30" width="30" src="./img/icons/redux.svg" />
+  <img height="30" width="30" src="./img/icons/tailwind.svg" />
+  <img height="30" width="30" src="./img/icons/material.svg" />
+</p>
+
+---
+
+## 📊 GitHub Stats
+
+| ![Anwar's GitHub stats](https://github-readme-stats.vercel.app/api?username=anwarhossain1&theme=tokyonight&show_icons=true) | [![Anwar's GitHub Streak](https://streak-stats.demolab.com?user=anwarhossain1&theme=tokyonight)](https://git.io/streak-stats) |
+| -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+
+---
+
+⭐ Always building. Always learning. Always shipping.

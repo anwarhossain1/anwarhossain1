@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./img/main/header-anwar.svg" alt="Anwar Hossain header" width="100%" />
+</p>
+
 # Hi 👋 I’m Anwar Hossain  
 ## Full Stack Engineer (MERN Focused)
 

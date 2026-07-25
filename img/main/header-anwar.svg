@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="280" viewBox="0 0 850 280">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0e2e"/>
+      <stop offset="40%" style="stop-color:#241533"/>
+      <stop offset="100%" style="stop-color:#0d0818"/>
+    </linearGradient>
+    <radialGradient id="glow-center" cx="50%" cy="55%" r="40%">
+      <stop offset="0%" style="stop-color:#8957e5;stop-opacity:0.10"/>
+      <stop offset="100%" style="stop-color:#8957e5;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="glow-strong">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-soft">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="text-glow">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feFlood flood-color="#58a6ff" flood-opacity="0.3" result="c"/>
+      <feComposite in="c" in2="b" operator="in" result="d"/>
+      <feMerge><feMergeNode in="d"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* ── Particles ── */
+    @keyframes float1 { 0%,100%{transform:translate(0,0)} 25%{transform:translate(12px,-8px)} 50%{transform:translate(-5px,-15px)} 75%{transform:translate(-12px,5px)} }
+    @keyframes float2 { 0%,100%{transform:translate(0,0)} 25%{transform:translate(-10px,12px)} 50%{transform:translate(8px,6px)} 75%{transform:translate(15px,-10px)} }
+    @keyframes float3 { 0%,100%{transform:translate(0,0)} 33%{transform:translate(18px,8px)} 66%{transform:translate(-8px,-12px)} }
+    @keyframes float4 { 0%,100%{transform:translate(0,0)} 20%{transform:translate(-15px,-6px)} 60%{transform:translate(10px,14px)} 80%{transform:translate(6px,-8px)} }
+    @keyframes pulse { 0%,100%{opacity:0.3;r:2} 50%{opacity:0.9;r:3.5} }
+    @keyframes pulse2 { 0%,100%{opacity:0.2;r:1.5} 50%{opacity:0.7;r:3} }
+    @keyframes pulse3 { 0%,100%{opacity:0.4;r:2.5} 50%{opacity:1;r:4} }
+    @keyframes linePulse { 0%,100%{opacity:0.04} 50%{opacity:0.15} }
+    @keyframes linePulse2 { 0%,100%{opacity:0.03} 50%{opacity:0.12} }
+
+    .p1{animation:float1 12s ease-in-out infinite,pulse 4s ease-in-out infinite}
+    .p2{animation:float2 15s ease-in-out infinite,pulse2 5s ease-in-out 0.5s infinite}
+    .p3{animation:float3 10s ease-in-out infinite,pulse 3.5s ease-in-out 1s infinite}
+    .p4{animation:float4 18s ease-in-out infinite,pulse2 6s ease-in-out 0.3s infinite}
+    .p5{animation:float1 14s ease-in-out 2s infinite,pulse3 4s ease-in-out infinite}
+    .p6{animation:float2 11s ease-in-out 1s infinite,pulse 5s ease-in-out 2s infinite}
+    .p7{animation:float3 16s ease-in-out 0.5s infinite,pulse2 4.5s ease-in-out 1s infinite}
+    .p8{animation:float4 13s ease-in-out 1.5s infinite,pulse 3s ease-in-out 0.5s infinite}
+    .p9{animation:float1 17s ease-in-out 0.8s infinite,pulse3 5.5s ease-in-out infinite}
+    .p10{animation:float2 12s ease-in-out 2.5s infinite,pulse 4s ease-in-out 1.5s infinite}
+    .p11{animation:float3 14s ease-in-out infinite,pulse2 3.5s ease-in-out 0.8s infinite}
+    .p12{animation:float4 10s ease-in-out 1.2s infinite,pulse 5s ease-in-out infinite}
+    .p13{animation:float1 16s ease-in-out 0.3s infinite,pulse3 4s ease-in-out 2s infinite}
+    .p14{animation:float2 13s ease-in-out 1.8s infinite,pulse2 6s ease-in-out infinite}
+    .p15{animation:float3 11s ease-in-out 2.2s infinite,pulse 3.5s ease-in-out 1.2s infinite}
+
+    .ln{animation:linePulse 6s ease-in-out infinite}
+    .ln2{animation:linePulse2 8s ease-in-out 1s infinite}
+    .ln3{animation:linePulse 5s ease-in-out 2s infinite}
+    .ln4{animation:linePulse2 7s ease-in-out 0.5s infinite}
+    .ln5{animation:linePulse 9s ease-in-out 1.5s infinite}
+    .ln6{animation:linePulse2 6s ease-in-out 3s infinite}
+
+    /* ── Text ── */
+    @keyframes fadeSlideDown { from{opacity:0;transform:translateY(-12px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes fadeSlideUp { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes cursorBlink { 0%,100%{opacity:1} 50%{opacity:0} }
+    @keyframes borderGlow { 0%,100%{opacity:0.15} 50%{opacity:0.4} }
+    @keyframes waveMove { 0%{transform:translateX(-100px)} 100%{transform:translateX(100px)} }
+
+    .welcome{animation:fadeSlideDown 0.8s ease-out 0.2s both}
+    .name-text{animation:fadeSlideDown 0.8s ease-out 0.5s both}
+    .role-text{animation:fadeSlideUp 0.6s ease-out 0.9s both}
+    .tagline{animation:fadeSlideUp 0.6s ease-out 1.2s both}
+    .cursor{animation:cursorBlink 1s step-end infinite}
+    .border-glow{animation:borderGlow 4s ease-in-out infinite}
+  </style>
+
+  <!-- Background -->
+  <rect fill="url(#bg)" width="850" height="280" rx="0"/>
+  <rect fill="url(#glow-center)" width="850" height="280"/>
+
+  <!-- ── Network Lines ── -->
+  <line class="ln" x1="80" y1="60" x2="200" y2="120" stroke="#58a6ff" stroke-width="0.5"/>
+  <line class="ln2" x1="200" y1="120" x2="350" y2="80" stroke="#58a6ff" stroke-width="0.5"/>
+  <line class="ln3" x1="650" y1="50" x2="780" y2="100" stroke="#58a6ff" stroke-width="0.5"/>
+  <line class="ln4" x1="500" y1="220" x2="680" y2="250" stroke="#58a6ff" stroke-width="0.5"/>
+  <line class="ln5" x1="100" y1="200" x2="250" y2="240" stroke="#58a6ff" stroke-width="0.5"/>
+  <line class="ln6" x1="700" y1="160" x2="810" y2="200" stroke="#58a6ff" stroke-width="0.5"/>
+  <line class="ln" x1="350" y1="80" x2="500" y2="50" stroke="#58a6ff" stroke-width="0.4"/>
+  <line class="ln3" x1="150" y1="180" x2="80" y2="60" stroke="#58a6ff" stroke-width="0.4"/>
+  <line class="ln5" x1="680" y1="250" x2="780" y2="100" stroke="#58a6ff" stroke-width="0.4"/>
+  <line class="ln2" x1="250" y1="240" x2="400" y2="260" stroke="#58a6ff" stroke-width="0.4"/>
+  <line class="ln4" x1="550" y1="70" x2="650" y2="50" stroke="#58a6ff" stroke-width="0.4"/>
+
+  <!-- ── Floating Particles ── -->
+  <circle class="p1" cx="80" cy="60" r="2" fill="#58a6ff"/>
+  <circle class="p2" cx="200" cy="120" r="2.5" fill="#58a6ff"/>
+  <circle class="p3" cx="350" cy="80" r="1.5" fill="#58a6ff"/>
+  <circle class="p4" cx="500" cy="50" r="2" fill="#58a6ff"/>
+  <circle class="p5" cx="650" cy="50" r="3" fill="#58a6ff"/>
+  <circle class="p6" cx="780" cy="100" r="2" fill="#58a6ff"/>
+  <circle class="p7" cx="100" cy="200" r="1.5" fill="#58a6ff"/>
+  <circle class="p8" cx="250" cy="240" r="2" fill="#58a6ff"/>
+  <circle class="p9" cx="400" cy="260" r="1.5" fill="#58a6ff"/>
+  <circle class="p10" cx="500" cy="220" r="2.5" fill="#58a6ff"/>
+  <circle class="p11" cx="680" cy="250" r="2" fill="#58a6ff"/>
+  <circle class="p12" cx="810" cy="200" r="1.5" fill="#58a6ff"/>
+  <circle class="p13" cx="150" cy="180" r="2" fill="#3fb950"/>
+  <circle class="p14" cx="550" cy="70" r="2" fill="#bc8cff"/>
+  <circle class="p15" cx="700" cy="160" r="2" fill="#f0883e"/>
+
+  <!-- Extra dim particles for depth -->
+  <circle class="p3" cx="40" cy="140" r="1" fill="#58a6ff" opacity="0.3"/>
+  <circle class="p7" cx="320" cy="40" r="1" fill="#58a6ff" opacity="0.3"/>
+  <circle class="p1" cx="600" cy="140" r="1" fill="#58a6ff" opacity="0.3"/>
+  <circle class="p10" cx="450" cy="180" r="1" fill="#58a6ff" opacity="0.25"/>
+  <circle class="p5" cx="750" cy="50" r="1" fill="#58a6ff" opacity="0.2"/>
+  <circle class="p12" cx="170" cy="260" r="1" fill="#58a6ff" opacity="0.25"/>
+  <circle class="p8" cx="620" cy="260" r="1" fill="#58a6ff" opacity="0.2"/>
+  <circle class="p2" cx="830" cy="140" r="1" fill="#58a6ff" opacity="0.2"/>
+
+  <!-- ═══ TEXT CONTENT ═══ -->
+
+  <!-- Welcome -->
+  <g class="welcome">
+    <text x="425" y="62" text-anchor="middle" fill="#8b949e" font-family="'Segoe UI','Helvetica Neue',sans-serif" font-size="13" font-weight="400" letter-spacing="3">WELCOME TO MY UNIVERSE</text>
+  </g>
+
+  <!-- Name -->
+  <g class="name-text" filter="url(#text-glow)">
+    <text x="425" y="120" text-anchor="middle" fill="#ffffff" font-family="'Segoe UI','Helvetica Neue',sans-serif" font-size="42" font-weight="800" letter-spacing="2">ANWAR HOSSAIN</text>
+  </g>
+
+  <!-- Role -->
+  <g class="role-text">
+    <text x="425" y="158" text-anchor="middle" fill="#58a6ff" font-family="'Segoe UI','Helvetica Neue',sans-serif" font-size="16" font-weight="600" letter-spacing="4">SENIOR SOFTWARE ENGINEER</text>
+  </g>
+
+  <!-- Tagline -->
+  <!-- <g class="tagline">
+    <text x="425" y="190" text-anchor="middle" fill="#8b949e" font-family="'Segoe UI','Helvetica Neue',sans-serif" font-size="13" letter-spacing="1">@ Intelligent Machines · Dhaka, Bangladesh</text>
+  </g> -->
+
+  <!-- Animated tagline with cursor -->
+  <g class="tagline">
+    <text x="425" y="225" text-anchor="middle" fill="#6e7681" font-family="'Segoe UI','Helvetica Neue',monospace" font-size="12" letter-spacing="0.5">Transforming Business using AI and Software Engineering</text>
+    <rect class="cursor" x="683" y="214" width="7" height="14" fill="#58a6ff" rx="1"/>
+  </g>
+
+  <!-- Bottom accent line -->
+  <rect class="border-glow" x="250" y="260" width="350" height="1" fill="#58a6ff" rx="1"/>
+  <circle class="border-glow" cx="250" cy="260" r="2" fill="#58a6ff"/>
+  <circle class="border-glow" cx="600" cy="260" r="2" fill="#58a6ff"/>
+</svg>

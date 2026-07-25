@@ -47,10 +47,20 @@ I work across the full development lifecycle — from designing REST APIs and da
 
 ---
 
-## 📊 GitHub Stats
+## 📊 The Scoreboard
 
-| ![Anwar's GitHub stats](https://github-readme-stats.vercel.app/api?username=anwarhossain1&theme=tokyonight&show_icons=true) | [![Anwar's GitHub Streak](https://streak-stats.demolab.com?user=anwarhossain1&theme=tokyonight)](https://git.io/streak-stats) |
-| -------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=anwarhossain1&show_icons=true&hide_border=true&bg_color=00000000&title_color=58a6ff&icon_color=1f6feb&text_color=c9d1d9&count_private=true&include_all_commits=true&rank_icon=github"/>
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=anwarhossain1&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github"/>
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=anwarhossain1&hide_border=true&background=00000000&stroke=1f6feb&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=c9d1d9&dates=8b949e&currStreakNum=c9d1d9&sideNums=c9d1d9"/>
+  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=anwarhossain1&hide_border=true"/>
+</picture>
+
+</div>
 
 ---
 

@@ -49,19 +49,8 @@ I work across the full development lifecycle — from designing REST APIs and da
 
 ## 🛠 Languages and Tools
 
-<p align="left">
-  <img height="30" width="30" src="./img/icons/html5.svg" />
-  <img height="30" width="30" src="./img/icons/css-3.png" />
-  <img height="30" width="30" src="./img/icons/javascript.svg" />
-  <img height="30" width="30" src="./img/icons/typescript.svg" />
-  <img height="30" width="30" src="./img/icons/nodejs.svg" />
-  <img height="30" width="30" src="./img/icons/express.svg" />
-  <img height="30" width="30" src="./img/icons/mongodb.svg" />
-  <img height="30" width="30" src="./img/icons/react.svg" />
-  <img height="30" width="30" src="./img/icons/next-js.svg" />
-  <img height="30" width="30" src="./img/icons/redux.svg" />
-  <img height="30" width="30" src="./img/icons/tailwind.svg" />
-  <img height="30" width="30" src="./img/icons/material.svg" />
+<p align="center">
+  <img src="./img/main/tech-arsenal-anwar.svg" alt="Tech arsenal" width="600" />
 </p>
 
 ---

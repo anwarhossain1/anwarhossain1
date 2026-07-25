@@ -33,13 +33,9 @@ I work across the full development lifecycle — from designing REST APIs and da
 
 ## 👨‍💻 A Simple Intro About Me
 
-I am an explorer — not just in tech, but in life.
-
-- 🧠 I like to think deeply and solve problems.  
-- 🖥️ I love to design and build full-stack systems.  
-- 📚 I love to read books and expand my perspective.  
-- 🏍️ I am also a moto-rider 😉  
-- 🏴‍☠️ **My Motto:** 🗺️ *"Let's Build Another World"* 🗺️  
+<p align="center">
+  <img src="./img/main/about-me-anwar.svg" alt="A simple intro about me" width="100%" />
+</p>
 
 ---
 

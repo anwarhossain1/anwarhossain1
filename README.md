@@ -13,9 +13,9 @@
 # Hi 👋 I’m Anwar Hossain  
 ## Full Stack Engineer (MERN Focused)
 
-I specialize in building scalable, production-ready web applications using the **MERN stack** — MongoDB, Express.js, React.js, and Node.js — along with modern frontend technologies and backend architecture best practices.
-
-I work across the full development lifecycle — from designing REST APIs and database schemas to building responsive UIs and deploying applications.
+<p align="center">
+  <img src="./img/main/stack-lifecycle-anwar.svg" alt="MERN stack and development lifecycle" width="100%" />
+</p>
 
 <p align="center">
   <img src="./img/main/hero-card-anwar.svg" alt="Anwar Hossain profile card" width="100%" />

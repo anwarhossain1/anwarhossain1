@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="410" viewBox="0 0 850 410">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e17"/>
+      <stop offset="50%" style="stop-color:#0d1420"/>
+      <stop offset="100%" style="stop-color:#080c14"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:0.10"/>
+      <stop offset="100%" style="stop-color:#58a6ff;stop-opacity:0"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#131a26"/>
+      <stop offset="100%" style="stop-color:#0e141e"/>
+    </linearGradient>
+    <linearGradient id="accent-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#58a6ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#58a6ff;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="sh"><feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#000" flood-opacity="0.45"/></filter>
+    <filter id="text-glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feFlood flood-color="#58a6ff" flood-opacity="0.35" result="c"/>
+      <feComposite in="c" in2="b" operator="in" result="d"/>
+      <feMerge><feMergeNode in="d"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes fadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes slideIn { from{opacity:0;transform:translateX(-14px)} to{opacity:1;transform:translateX(0)} }
+    @keyframes slideInR { from{opacity:0;transform:translateX(14px)} to{opacity:1;transform:translateX(0)} }
+    @keyframes shimmer { 0%,100%{opacity:0.3} 50%{opacity:0.8} }
+    @keyframes flow { 0%{stroke-dashoffset:16} 100%{stroke-dashoffset:0} }
+    @keyframes dotPulse { 0%,100%{r:1.5;opacity:0.3} 50%{r:2.5;opacity:0.8} }
+    @keyframes ringPulse { 0%,100%{opacity:0.25} 50%{opacity:0.7} }
+
+    .h1{animation:fadeUp 0.6s ease-out 0.1s both}
+    .h2{animation:fadeUp 0.6s ease-out 0.25s both}
+    .pa{animation:fadeUp 0.6s ease-out 0.4s both}
+    .pb{animation:fadeUp 0.6s ease-out 0.5s both}
+    .l1{animation:slideIn 0.5s ease-out 0.6s both}
+    .l2{animation:slideIn 0.5s ease-out 0.70s both}
+    .l3{animation:slideIn 0.5s ease-out 0.80s both}
+    .l4{animation:slideIn 0.5s ease-out 0.90s both}
+    .l5{animation:slideIn 0.5s ease-out 1.00s both}
+    .s1{animation:slideInR 0.5s ease-out 0.7s both}
+    .s2{animation:slideInR 0.5s ease-out 0.82s both}
+    .s3{animation:slideInR 0.5s ease-out 0.94s both}
+    .s4{animation:slideInR 0.5s ease-out 1.06s both}
+    .shim{animation:shimmer 3s ease-in-out infinite}
+    .conn{stroke-dasharray:5 4;animation:flow 1.6s linear infinite,shimmer 4s ease-in-out infinite}
+    .amb{animation:dotPulse 3s ease-in-out infinite}
+    .amb2{animation:dotPulse 4s ease-in-out 1s infinite}
+    .ring{animation:ringPulse 3s ease-in-out infinite}
+
+    .eyebrow{fill:#58a6ff;font-family:'Segoe UI',monospace;font-size:11px;font-weight:700;letter-spacing:3px;text-anchor:middle}
+    .headline{fill:#ffffff;font-family:'Segoe UI','Helvetica Neue',sans-serif;font-size:19px;font-weight:700;text-anchor:middle}
+    .ptitle{fill:#8b949e;font-family:'Segoe UI',monospace;font-size:10px;font-weight:700;letter-spacing:2.5px}
+    .tech{fill:#e6edf3;font-family:'Segoe UI',sans-serif;font-size:13.5px;font-weight:700}
+    .role{fill:#8b949e;font-family:'Segoe UI',sans-serif;font-size:10.5px}
+    .badge{font-family:'Segoe UI',sans-serif;font-size:14px;font-weight:800;text-anchor:middle}
+    .num{fill:#0a0e17;font-family:'Segoe UI',monospace;font-size:11px;font-weight:800;text-anchor:middle}
+    .step{fill:#e6edf3;font-family:'Segoe UI',sans-serif;font-size:13px;font-weight:700}
+    .stepd{fill:#8b949e;font-family:'Segoe UI',sans-serif;font-size:10.5px}
+  </style>
+
+  <!-- Background -->
+  <rect fill="url(#bg)" width="850" height="410" rx="16"/>
+  <rect fill="url(#halo)" width="850" height="410" rx="16"/>
+  <rect fill="none" stroke="#58a6ff" stroke-opacity="0.18" stroke-width="1" x="1" y="1" width="848" height="408" rx="16"/>
+
+  <!-- Ambient dots -->
+  <circle class="amb" cx="46" cy="46" r="1.5" fill="#58a6ff"/>
+  <circle class="amb2" cx="806" cy="52" r="1.5" fill="#22d3ee"/>
+  <circle class="amb" cx="812" cy="370" r="1.5" fill="#a78bfa"/>
+  <circle class="amb2" cx="40" cy="378" r="1.5" fill="#4ade80"/>
+
+  <!-- Header -->
+  <g class="h1">
+    <text class="eyebrow" x="425" y="32">FULL STACK ENGINEER · MERN FOCUSED</text>
+  </g>
+  <g class="h2" filter="url(#text-glow)">
+    <text class="headline" x="425" y="58">Scalable, production-ready web apps — end to end.</text>
+  </g>
+
+  <!-- ══════════ PANEL A — THE STACK ══════════ -->
+  <g class="pa">
+    <rect fill="url(#panel)" x="24" y="84" width="386" height="300" rx="14" filter="url(#sh)"/>
+    <rect fill="none" stroke="#30363d" stroke-width="1" x="24" y="84" width="386" height="300" rx="14"/>
+    <rect class="shim" fill="url(#accent-line)" x="24" y="84" width="386" height="2" rx="1"/>
+    <text class="ptitle" x="44" y="112">🧱 THE STACK</text>
+  </g>
+
+  <!-- React -->
+  <g class="l1">
+    <rect fill="#22d3ee" fill-opacity="0.07" stroke="#22d3ee" stroke-opacity="0.3" stroke-width="1" x="44" y="128" width="346" height="44" rx="10"/>
+    <circle cx="76" cy="150" r="15" fill="#22d3ee" fill-opacity="0.16"/>
+    <circle class="ring" cx="76" cy="150" r="15" fill="none" stroke="#22d3ee" stroke-width="1"/>
+    <text class="badge" x="76" y="155" fill="#22d3ee">R</text>
+    <text class="tech" x="106" y="147">React.js</text>
+    <text class="role" x="106" y="162">Frontend — component-driven, responsive UIs</text>
+  </g>
+
+  <!-- Next.js -->
+  <g class="l2">
+    <rect fill="#e5e7eb" fill-opacity="0.07" stroke="#e5e7eb" stroke-opacity="0.3" stroke-width="1" x="44" y="177" width="346" height="44" rx="10"/>
+    <circle cx="76" cy="199" r="15" fill="#e5e7eb" fill-opacity="0.16"/>
+    <circle class="ring" cx="76" cy="199" r="15" fill="none" stroke="#e5e7eb" stroke-width="1"/>
+    <text class="badge" x="76" y="204" fill="#e5e7eb">▲</text>
+    <text class="tech" x="106" y="196">Next.js</text>
+    <text class="role" x="106" y="211">Framework — SSR, routing, production builds</text>
+  </g>
+
+  <!-- Express -->
+  <g class="l3">
+    <rect fill="#a78bfa" fill-opacity="0.07" stroke="#a78bfa" stroke-opacity="0.3" stroke-width="1" x="44" y="226" width="346" height="44" rx="10"/>
+    <circle cx="76" cy="248" r="15" fill="#a78bfa" fill-opacity="0.16"/>
+    <circle class="ring" cx="76" cy="248" r="15" fill="none" stroke="#a78bfa" stroke-width="1"/>
+    <text class="badge" x="76" y="253" fill="#a78bfa">E</text>
+    <text class="tech" x="106" y="245">Express.js</text>
+    <text class="role" x="106" y="260">API layer — routing, middleware, REST endpoints</text>
+  </g>
+
+  <!-- Node -->
+  <g class="l4">
+    <rect fill="#4ade80" fill-opacity="0.07" stroke="#4ade80" stroke-opacity="0.3" stroke-width="1" x="44" y="275" width="346" height="44" rx="10"/>
+    <circle cx="76" cy="297" r="15" fill="#4ade80" fill-opacity="0.16"/>
+    <circle class="ring" cx="76" cy="297" r="15" fill="none" stroke="#4ade80" stroke-width="1"/>
+    <text class="badge" x="76" y="302" fill="#4ade80">N</text>
+    <text class="tech" x="106" y="294">Node.js</text>
+    <text class="role" x="106" y="309">Server runtime — business logic &amp; services</text>
+  </g>
+
+  <!-- MongoDB -->
+  <g class="l5">
+    <rect fill="#fbbf24" fill-opacity="0.07" stroke="#fbbf24" stroke-opacity="0.3" stroke-width="1" x="44" y="324" width="346" height="44" rx="10"/>
+    <circle cx="76" cy="346" r="15" fill="#fbbf24" fill-opacity="0.16"/>
+    <circle class="ring" cx="76" cy="346" r="15" fill="none" stroke="#fbbf24" stroke-width="1"/>
+    <text class="badge" x="76" y="351" fill="#fbbf24">M</text>
+    <text class="tech" x="106" y="343">MongoDB</text>
+    <text class="role" x="106" y="358">Data layer — schema design &amp; persistence</text>
+  </g>
+
+  <!-- ══════════ PANEL B — THE LIFECYCLE ══════════ -->
+  <g class="pb">
+    <rect fill="url(#panel)" x="440" y="84" width="386" height="300" rx="14" filter="url(#sh)"/>
+    <rect fill="none" stroke="#30363d" stroke-width="1" x="440" y="84" width="386" height="300" rx="14"/>
+    <rect class="shim" fill="url(#accent-line)" x="440" y="84" width="386" height="2" rx="1"/>
+    <text class="ptitle" x="460" y="112">🔄 THE LIFECYCLE</text>
+  </g>
+
+  <!-- Connectors -->
+  <line class="conn" x1="492" y1="172" x2="492" y2="200" stroke="#58a6ff" stroke-width="1.5"/>
+  <line class="conn" x1="492" y1="234" x2="492" y2="262" stroke="#58a6ff" stroke-width="1.5"/>
+  <line class="conn" x1="492" y1="296" x2="492" y2="324" stroke="#58a6ff" stroke-width="1.5"/>
+
+  <!-- Step 1 -->
+  <g class="s1">
+    <circle cx="492" cy="155" r="16" fill="#58a6ff"/>
+    <text class="num" x="492" y="159">01</text>
+    <text class="step" x="524" y="151">Design the API</text>
+    <text class="stepd" x="524" y="167">REST endpoints, contracts, auth flows</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g class="s2">
+    <circle cx="492" cy="217" r="16" fill="#58a6ff"/>
+    <text class="num" x="492" y="221">02</text>
+    <text class="step" x="524" y="213">Model the Data</text>
+    <text class="stepd" x="524" y="229">Database schemas, relations, indexes</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g class="s3">
+    <circle cx="492" cy="279" r="16" fill="#58a6ff"/>
+    <text class="num" x="492" y="283">03</text>
+    <text class="step" x="524" y="275">Build the UI</text>
+    <text class="stepd" x="524" y="291">Responsive interfaces wired to the API</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g class="s4">
+    <circle cx="492" cy="341" r="16" fill="#58a6ff"/>
+    <text class="num" x="492" y="345">04</text>
+    <text class="step" x="524" y="337">Ship It</text>
+    <text class="stepd" x="524" y="353">Deploy, monitor, iterate in production</text>
+  </g>
+</svg>

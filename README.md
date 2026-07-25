@@ -23,13 +23,11 @@ I work across the full development lifecycle — from designing REST APIs and da
 
 ---
 
-## 🔹 Core Stack
+## 🔨 Stuff I've Broken & Rebuilt Better
 
-**Frontend:** ReactJS, NextJS, TailwindCSS, Material UI, Redux, Styled Components  
-**Backend:** Node.js, Express.js  
-**Database:** MongoDB  
-**Languages:** JavaScript, TypeScript  
-**Other Tools:** REST APIs, JWT Authentication, Git, VPS Deployment  
+<p align="center">
+  <img src="./img/main/what-i-build-anwar.svg" alt="What I build" width="100%" />
+</p>
 
 ---
 

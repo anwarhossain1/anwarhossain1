@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="520" viewBox="0 0 850 520">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e17"/><stop offset="100%" style="stop-color:#080c14"/>
+    </linearGradient>
+    <filter id="card-shadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glow-teal">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feFlood flood-color="#2dd4bf" flood-opacity="0.4" result="c"/>
+      <feComposite in="c" in2="b" operator="in" result="d"/>
+      <feMerge><feMergeNode in="d"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-amber">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feFlood flood-color="#fbbf24" flood-opacity="0.4" result="c"/>
+      <feComposite in="c" in2="b" operator="in" result="d"/>
+      <feMerge><feMergeNode in="d"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-rose">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feFlood flood-color="#fb7185" flood-opacity="0.4" result="c"/>
+      <feComposite in="c" in2="b" operator="in" result="d"/>
+      <feMerge><feMergeNode in="d"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-indigo">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feFlood flood-color="#818cf8" flood-opacity="0.4" result="c"/>
+      <feComposite in="c" in2="b" operator="in" result="d"/>
+      <feMerge><feMergeNode in="d"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Card backgrounds -->
+    <linearGradient id="card-ec" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d2a26"/><stop offset="100%" style="stop-color:#0f1a20"/>
+    </linearGradient>
+    <linearGradient id="card-vc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d240d"/><stop offset="100%" style="stop-color:#201a0f"/>
+    </linearGradient>
+    <linearGradient id="card-ls" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d0d17"/><stop offset="100%" style="stop-color:#200f15"/>
+    </linearGradient>
+    <linearGradient id="card-hm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#16132d"/><stop offset="100%" style="stop-color:#141220"/>
+    </linearGradient>
+
+    <!-- Hub radial glow -->
+    <radialGradient id="hub-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#2dd4bf;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#2dd4bf;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    @keyframes cardIn1 { from{opacity:0;transform:translate(-20px,-20px)} to{opacity:1;transform:translate(0,0)} }
+    @keyframes cardIn2 { from{opacity:0;transform:translate(20px,-20px)} to{opacity:1;transform:translate(0,0)} }
+    @keyframes cardIn3 { from{opacity:0;transform:translate(-20px,20px)} to{opacity:1;transform:translate(0,0)} }
+    @keyframes cardIn4 { from{opacity:0;transform:translate(20px,20px)} to{opacity:1;transform:translate(0,0)} }
+    @keyframes hubPulse { 0%,100%{r:18;opacity:0.8} 50%{r:22;opacity:1} }
+    @keyframes hubGlow { 0%,100%{r:40;opacity:0.15} 50%{r:50;opacity:0.25} }
+    @keyframes lineFlow { 0%{stroke-dashoffset:20} 100%{stroke-dashoffset:0} }
+    @keyframes linePulse { 0%,100%{opacity:0.15} 50%{opacity:0.5} }
+    @keyframes borderPulse1 { 0%,100%{stroke-opacity:0.2} 50%{stroke-opacity:0.6} }
+    @keyframes borderPulse2 { 0%,100%{stroke-opacity:0.15} 50%{stroke-opacity:0.5} }
+    @keyframes iconFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-3px)} }
+    @keyframes dotPulse { 0%,100%{r:1.5;opacity:0.3} 50%{r:2.5;opacity:0.8} }
+
+    .card-1{animation:cardIn1 0.8s ease-out 0.3s both}
+    .card-2{animation:cardIn2 0.8s ease-out 0.5s both}
+    .card-3{animation:cardIn3 0.8s ease-out 0.7s both}
+    .card-4{animation:cardIn4 0.8s ease-out 0.9s both}
+    .hub-circle{animation:hubPulse 3s ease-in-out infinite}
+    .hub-glow-circle{animation:hubGlow 3s ease-in-out infinite}
+    .conn-line{stroke-dasharray:6 4;animation:lineFlow 2s linear infinite,linePulse 4s ease-in-out infinite}
+    .conn-line2{stroke-dasharray:6 4;animation:lineFlow 2s linear 0.5s infinite,linePulse 4s ease-in-out 1s infinite}
+    .conn-line3{stroke-dasharray:6 4;animation:lineFlow 2s linear 1s infinite,linePulse 4s ease-in-out 2s infinite}
+    .conn-line4{stroke-dasharray:6 4;animation:lineFlow 2s linear 1.5s infinite,linePulse 4s ease-in-out 0.5s infinite}
+    .border-ec{animation:borderPulse1 4s ease-in-out infinite}
+    .border-vc{animation:borderPulse2 4s ease-in-out 1s infinite}
+    .border-ls{animation:borderPulse1 4s ease-in-out 2s infinite}
+    .border-hm{animation:borderPulse2 4s ease-in-out 0.5s infinite}
+    .icon-float-1{animation:iconFloat 4s ease-in-out infinite}
+    .icon-float-2{animation:iconFloat 4s ease-in-out 1s infinite}
+    .icon-float-3{animation:iconFloat 4s ease-in-out 2s infinite}
+    .icon-float-4{animation:iconFloat 4s ease-in-out 0.5s infinite}
+    .ambient{animation:dotPulse 3s ease-in-out infinite}
+    .ambient2{animation:dotPulse 4s ease-in-out 1s infinite}
+    .ambient3{animation:dotPulse 3.5s ease-in-out 2s infinite}
+
+    .card-title{fill:#ffffff;font-family:'Segoe UI','Helvetica Neue',sans-serif;font-size:15px;font-weight:700}
+    .card-subtitle{fill:#8b949e;font-family:'Segoe UI',sans-serif;font-size:10.5px;letter-spacing:2px;font-weight:600}
+    .card-desc{fill:#c9d1d9;font-family:'Segoe UI',sans-serif;font-size:11px;line-height:1.4}
+    .card-tech{fill:#6e7681;font-family:'Segoe UI',monospace;font-size:9.5px}
+    .card-metric{font-family:'Segoe UI',monospace;font-size:11px;font-weight:700}
+    .hub-text{fill:#ffffff;font-family:'Segoe UI',sans-serif;font-size:10px;font-weight:700;text-anchor:middle;letter-spacing:1px}
+  </style>
+
+  <!-- Background -->
+  <rect fill="url(#bg)" width="850" height="520" rx="0"/>
+
+  <!-- Ambient particles -->
+  <circle class="ambient" cx="60" cy="80" r="1.5" fill="#2dd4bf"/>
+  <circle class="ambient2" cx="790" cy="70" r="1.5" fill="#fbbf24"/>
+  <circle class="ambient3" cx="130" cy="450" r="1.5" fill="#fb7185"/>
+  <circle class="ambient" cx="720" cy="460" r="1.5" fill="#818cf8"/>
+  <circle class="ambient2" cx="400" cy="30" r="1" fill="#2dd4bf"/>
+  <circle class="ambient3" cx="450" cy="490" r="1" fill="#2dd4bf"/>
+
+  <!-- ═══ CENTER HUB ═══ -->
+  <circle class="hub-glow-circle" cx="425" cy="260" r="45" fill="url(#hub-glow)"/>
+  <circle class="hub-circle" cx="425" cy="260" r="20" fill="#0d1117" stroke="#2dd4bf" stroke-width="2"/>
+  <text class="hub-text" x="425" y="257">WHAT I</text>
+  <text class="hub-text" x="425" y="269">BUILD</text>
+
+  <!-- ═══ CONNECTION LINES ═══ -->
+  <line class="conn-line" x1="405" y1="243" x2="230" y2="130" stroke="#2dd4bf" stroke-width="1.5"/>
+  <line class="conn-line2" x1="445" y1="243" x2="620" y2="130" stroke="#fbbf24" stroke-width="1.5"/>
+  <line class="conn-line3" x1="405" y1="277" x2="230" y2="390" stroke="#fb7185" stroke-width="1.5"/>
+  <line class="conn-line4" x1="445" y1="277" x2="620" y2="390" stroke="#818cf8" stroke-width="1.5"/>
+
+  <!-- ═══ CARD 1: E-Commerce (Top Left) ═══ -->
+  <g class="card-1">
+    <rect fill="url(#card-ec)" x="20" y="30" width="380" height="200" rx="12" filter="url(#card-shadow)"/>
+    <rect class="border-ec" fill="none" stroke="#2dd4bf" stroke-width="1.5" x="20" y="30" width="380" height="200" rx="12"/>
+
+    <!-- Accent bar -->
+    <rect fill="#2dd4bf" x="20" y="30" width="380" height="3" rx="12" opacity="0.6"/>
+
+    <!-- Icon -->
+    <g class="icon-float-1">
+      <circle cx="56" cy="68" r="16" fill="#2dd4bf" opacity="0.15"/>
+      <text x="47" y="74" font-size="20">🛒</text>
+    </g>
+
+    <text class="card-subtitle" x="82" y="60" fill="#2dd4bf">ONLINE RETAIL &amp; PAYMENTS</text>
+    <text class="card-title" x="82" y="80">E-Commerce Platforms</text>
+
+    <text class="card-desc" x="40" y="108">Building full-featured online stores — product</text>
+    <text class="card-desc" x="40" y="124">catalogs, cart &amp; checkout flows, order management,</text>
+    <text class="card-desc" x="40" y="140">and secure payment gateway integrations across</text>
+    <text class="card-desc" x="40" y="156">customer storefronts and admin dashboards.</text>
+
+    <text class="card-tech" x="40" y="180">React · Next.js · Node.js · Express · MongoDB · Stripe</text>
+
+    <text class="card-metric" x="40" y="205" fill="#2dd4bf">Storefront to checkout, end-to-end</text>
+    <circle cx="374" cy="68" r="3" fill="#2dd4bf" filter="url(#glow-teal)"/>
+  </g>
+
+  <!-- ═══ CARD 2: Video Consultancy (Top Right) ═══ -->
+  <g class="card-2">
+    <rect fill="url(#card-vc)" x="450" y="30" width="380" height="200" rx="12" filter="url(#card-shadow)"/>
+    <rect class="border-vc" fill="none" stroke="#fbbf24" stroke-width="1.5" x="450" y="30" width="380" height="200" rx="12"/>
+    <rect fill="#fbbf24" x="450" y="30" width="380" height="3" rx="12" opacity="0.6"/>
+
+    <g class="icon-float-2">
+      <circle cx="486" cy="68" r="16" fill="#fbbf24" opacity="0.15"/>
+      <text x="478" y="74" font-size="20">🎥</text>
+    </g>
+
+    <text class="card-subtitle" x="512" y="60" fill="#fbbf24">TELEHEALTH &amp; VIDEO CONSULTING</text>
+    <text class="card-title" x="512" y="80">Video Consultancy Platform</text>
+
+    <text class="card-desc" x="470" y="108">Real-time video consultation systems connecting</text>
+    <text class="card-desc" x="470" y="124">clients and consultants — scheduling, secure video</text>
+    <text class="card-desc" x="470" y="140">sessions, and in-app messaging for a seamless</text>
+    <text class="card-desc" x="470" y="156">remote consultancy experience.</text>
+
+    <text class="card-tech" x="470" y="180">WebRTC · Socket.io · React · Node.js · Express · MongoDB</text>
+
+    <text class="card-metric" x="470" y="205" fill="#fbbf24">Live sessions, scheduled &amp; on-demand</text>
+    <circle cx="804" cy="68" r="3" fill="#fbbf24" filter="url(#glow-amber)"/>
+  </g>
+
+  <!-- ═══ CARD 3: Link Shortener (Bottom Left) ═══ -->
+  <g class="card-3">
+    <rect fill="url(#card-ls)" x="20" y="290" width="380" height="200" rx="12" filter="url(#card-shadow)"/>
+    <rect class="border-ls" fill="none" stroke="#fb7185" stroke-width="1.5" x="20" y="290" width="380" height="200" rx="12"/>
+    <rect fill="#fb7185" x="20" y="290" width="380" height="3" rx="12" opacity="0.6"/>
+
+    <g class="icon-float-3">
+      <circle cx="56" cy="328" r="16" fill="#fb7185" opacity="0.15"/>
+      <text x="47" y="334" font-size="20">🔗</text>
+    </g>
+
+    <text class="card-subtitle" x="82" y="320" fill="#fb7185">URL SHORTENING &amp; ANALYTICS</text>
+    <text class="card-title" x="82" y="340">Link Shortener Service</text>
+
+    <text class="card-desc" x="40" y="368">Custom URL shortening service with branded aliases,</text>
+    <text class="card-desc" x="40" y="384">click tracking &amp; analytics dashboards, and fast</text>
+    <text class="card-desc" x="40" y="400">redirect handling built for reliability at scale.</text>
+
+    <text class="card-tech" x="40" y="440">Node.js · Express · MongoDB · Redis · REST APIs</text>
+
+    <text class="card-metric" x="40" y="465" fill="#fb7185">Fast redirects · click analytics</text>
+    <circle cx="374" cy="328" r="3" fill="#fb7185" filter="url(#glow-rose)"/>
+  </g>
+
+  <!-- ═══ CARD 4: Hospital Management (Bottom Right) ═══ -->
+  <g class="card-4">
+    <rect fill="url(#card-hm)" x="450" y="290" width="380" height="200" rx="12" filter="url(#card-shadow)"/>
+    <rect class="border-hm" fill="none" stroke="#818cf8" stroke-width="1.5" x="450" y="290" width="380" height="200" rx="12"/>
+    <rect fill="#818cf8" x="450" y="290" width="380" height="3" rx="12" opacity="0.6"/>
+
+    <g class="icon-float-4">
+      <circle cx="486" cy="328" r="16" fill="#818cf8" opacity="0.15"/>
+      <text x="478" y="334" font-size="20">🏥</text>
+    </g>
+
+    <text class="card-subtitle" x="512" y="320" fill="#818cf8">HEALTHCARE &amp; PATIENT CARE</text>
+    <text class="card-title" x="512" y="340">Hospital Management System</text>
+
+    <text class="card-desc" x="470" y="368">IPD &amp; bed management, admission workflows,</text>
+    <text class="card-desc" x="470" y="384">discharge summaries, and treatment tracking —</text>
+    <text class="card-desc" x="470" y="400">built to support real hospital operations from</text>
+    <text class="card-desc" x="470" y="416">admission through discharge.</text>
+
+    <text class="card-tech" x="470" y="440">React · TypeScript · MUI · Redux · Node.js · REST APIs</text>
+
+    <text class="card-metric" x="470" y="465" fill="#818cf8">Admission to discharge, end-to-end</text>
+    <circle cx="804" cy="328" r="3" fill="#818cf8" filter="url(#glow-indigo)"/>
+  </g>
+</svg>

@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="310" viewBox="0 0 850 310">
+  <defs>
+    <!-- 3D Drop Shadow -->
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1f6feb" flood-opacity="0.3"/>
+    </filter>
+    <filter id="shadow-sm" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#1f6feb" flood-opacity="0.2"/>
+    </filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-text" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="50%" style="stop-color:#0f1923"/>
+      <stop offset="100%" style="stop-color:#0d1117"/>
+    </linearGradient>
+
+    <!-- Card Gradient -->
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#161b22"/>
+      <stop offset="100%" style="stop-color:#1c2333"/>
+    </linearGradient>
+
+    <!-- Stat Bar Gradients -->
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1f6feb"/><stop offset="100%" style="stop-color:#58a6ff"/>
+    </linearGradient>
+    <linearGradient id="grad-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#238636"/><stop offset="100%" style="stop-color:#3fb950"/>
+    </linearGradient>
+    <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d29922"/><stop offset="100%" style="stop-color:#f0883e"/>
+    </linearGradient>
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8957e5"/><stop offset="100%" style="stop-color:#bc8cff"/>
+    </linearGradient>
+    <linearGradient id="grad-pink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#db61a2"/><stop offset="100%" style="stop-color:#f778ba"/>
+    </linearGradient>
+
+    <!-- Accent Line Gradient -->
+    <linearGradient id="accent-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1f6feb;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#58a6ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1f6feb;stop-opacity:0"/>
+    </linearGradient>
+
+    <!-- Orb Gradient -->
+    <radialGradient id="orb-blue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#58a6ff;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    .label { fill: #8b949e; font-family: 'Segoe UI', 'Helvetica Neue', monospace; font-size: 11px; }
+    .value { fill: #c9d1d9; font-family: 'Segoe UI', 'Helvetica Neue', monospace; font-size: 12px; }
+    .name { fill: #ffffff; font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; font-size: 26px; font-weight: 700; letter-spacing: 1px; }
+    .title-role { fill: #58a6ff; font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; font-size: 14px; font-weight: 600; }
+    .subtitle { fill: #8b949e; font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; font-size: 12px; }
+    .stat-label { fill: #8b949e; font-family: 'Segoe UI', monospace; font-size: 10px; }
+    .stat-value { fill: #c9d1d9; font-family: 'Segoe UI', monospace; font-size: 10px; font-weight: 600; }
+    .stat-bg { fill: #21262d; }
+    .quest-title { fill: #c9d1d9; font-family: 'Segoe UI', monospace; font-size: 10.5px; }
+    .quest-desc { fill: #6e7681; font-family: 'Segoe UI', monospace; font-size: 9.5px; }
+    .section-title { fill: #58a6ff; font-family: 'Segoe UI', monospace; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
+    .blink { animation: blink 1.2s step-end infinite; }
+
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+    @keyframes slideRight { from{width:0} }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-4px)} }
+    @keyframes pulseGlow { 0%,100%{opacity:0.15} 50%{opacity:0.3} }
+    @keyframes shimmer { 0%{opacity:0.3} 50%{opacity:0.7} 100%{opacity:0.3} }
+
+    .bar-1 { animation: slideRight 1.5s ease-out 0.4s both; }
+    .bar-2 { animation: slideRight 1.5s ease-out 0.6s both; }
+    .bar-3 { animation: slideRight 1.5s ease-out 0.8s both; }
+    .bar-4 { animation: slideRight 1.5s ease-out 1.0s both; }
+    .bar-5 { animation: slideRight 1.5s ease-out 1.2s both; }
+    .fade-1 { animation: fadeUp 0.5s ease-out 0.1s both; }
+    .fade-2 { animation: fadeUp 0.5s ease-out 0.3s both; }
+    .fade-3 { animation: fadeUp 0.5s ease-out 0.6s both; }
+    .fade-4 { animation: fadeUp 0.5s ease-out 0.9s both; }
+    .orb-float { animation: float 6s ease-in-out infinite, pulseGlow 4s ease-in-out infinite; }
+    .orb-float-2 { animation: float 8s ease-in-out 1s infinite, pulseGlow 5s ease-in-out 1s infinite; }
+    .accent-shimmer { animation: shimmer 3s ease-in-out infinite; }
+  </style>
+
+  <!-- BACKGROUND -->
+  <rect fill="url(#bg-grad)" width="850" height="310" rx="14"/>
+
+  <!-- Ambient Orbs -->
+  <circle class="orb-float" cx="100" cy="80" r="120" fill="url(#orb-blue)"/>
+  <circle class="orb-float-2" cx="750" cy="230" r="100" fill="url(#orb-blue)"/>
+
+  <!-- Border -->
+  <rect fill="none" stroke="#1f6feb" stroke-opacity="0.2" stroke-width="1" x="1" y="1" width="848" height="308" rx="14"/>
+
+  <!-- ═══ LEFT PANEL — Identity ═══ -->
+  <!-- 3D Card -->
+  <rect fill="#0d1117" x="27" y="27" width="370" height="256" rx="12" opacity="0.5"/>
+  <rect fill="url(#card-grad)" x="24" y="24" width="370" height="256" rx="12" filter="url(#shadow)"/>
+  <rect fill="none" stroke="#30363d" stroke-width="1" x="24" y="24" width="370" height="256" rx="12"/>
+
+  <!-- Accent Line Top -->
+  <rect class="accent-shimmer" fill="url(#accent-line)" x="24" y="24" width="370" height="2" rx="1"/>
+
+  <g class="fade-1">
+    <text class="section-title" x="48" y="56">PLAYER PROFILE</text>
+  </g>
+
+  <g class="fade-2">
+    <text class="name" x="48" y="92">Anwar Hossain</text>
+    <text class="title-role" x="48" y="114">Full Stack Engineer (MERN Focused)</text>
+    <text class="subtitle" x="48" y="132">Dhaka, Bangladesh</text>
+  </g>
+
+  <g class="fade-3">
+    <line x1="48" y1="148" x2="370" y2="148" stroke="#21262d" stroke-width="1"/>
+    <text class="label" x="48" y="170">Type</text>
+    <text class="value" x="130" y="170">MERN Stack Developer</text>
+    <text class="label" x="48" y="192">Experience</text>
+    <text class="value" x="130" y="192">5+ Years Production Systems</text>
+    <text class="label" x="48" y="214">Languages</text>
+    <text class="value" x="130" y="214">JavaScript · TypeScript</text>
+    <text class="label" x="48" y="236">Focus</text>
+    <text class="value" x="130" y="236">REST APIs · Cloud Deployment</text>
+  </g>
+
+  <g class="fade-4">
+    <text class="subtitle" x="48" y="265">Building scalable, production-ready web apps</text>
+    <rect class="blink" x="316" y="254" width="7" height="13" fill="#58a6ff" rx="1"/>
+  </g>
+
+  <!-- ═══ RIGHT PANEL — Stats & Quests ═══ -->
+  <!-- 3D Card -->
+  <rect fill="#0d1117" x="419" y="27" width="408" height="256" rx="12" opacity="0.5"/>
+  <rect fill="url(#card-grad)" x="416" y="24" width="408" height="256" rx="12" filter="url(#shadow)"/>
+  <rect fill="none" stroke="#30363d" stroke-width="1" x="416" y="24" width="408" height="256" rx="12"/>
+  <rect class="accent-shimmer" fill="url(#accent-line)" x="416" y="24" width="408" height="2" rx="1"/>
+
+  <!-- STATS -->
+  <g class="fade-2">
+    <text class="section-title" x="440" y="56">COMBAT STATS</text>
+
+    <text class="stat-label" x="440" y="80">EXPERIENCE</text>
+    <rect class="stat-bg" x="540" y="70" width="200" height="12" rx="6"/>
+    <rect class="bar-1" fill="url(#grad-blue)" x="540" y="70" width="172" height="12" rx="6"/>
+    <text class="stat-value" x="750" y="80">5+ yrs</text>
+
+    <text class="stat-label" x="440" y="102">FRONTEND</text>
+    <rect class="stat-bg" x="540" y="92" width="200" height="12" rx="6"/>
+    <rect class="bar-2" fill="url(#grad-green)" x="540" y="92" width="170" height="12" rx="6"/>
+    <text class="stat-value" x="750" y="102">React</text>
+
+    <text class="stat-label" x="440" y="124">RELIABILITY</text>
+    <rect class="stat-bg" x="540" y="114" width="200" height="12" rx="6"/>
+    <rect class="bar-3" fill="url(#grad-orange)" x="540" y="114" width="185" height="12" rx="6"/>
+    <text class="stat-value" x="750" y="124">Prod-Ready</text>
+
+    <text class="stat-label" x="440" y="146">STACK</text>
+    <rect class="stat-bg" x="540" y="136" width="200" height="12" rx="6"/>
+    <rect class="bar-4" fill="url(#grad-purple)" x="540" y="136" width="188" height="12" rx="6"/>
+    <text class="stat-value" x="750" y="146">MERN</text>
+
+    <text class="stat-label" x="440" y="168">DEPLOYMENT</text>
+    <rect class="stat-bg" x="540" y="158" width="200" height="12" rx="6"/>
+    <rect class="bar-5" fill="url(#grad-pink)" x="540" y="158" width="165" height="12" rx="6"/>
+    <text class="stat-value" x="750" y="168">VPS · Git</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="440" y1="182" x2="800" y2="182" stroke="#21262d" stroke-width="1"/>
+
+  <!-- ACTIVE QUESTS -->
+  <g class="fade-3">
+    <text class="section-title" x="440" y="202">ACTIVE QUESTS</text>
+
+    <circle cx="452" cy="222" r="4" fill="#3fb950"/>
+    <text class="quest-title" x="464" y="226">Full-Stack Web Development</text>
+    <text class="quest-desc" x="656" y="226">Building scalable apps with MERN</text>
+
+    <circle cx="452" cy="244" r="4" fill="#58a6ff"/>
+    <text class="quest-title" x="464" y="248">REST API Architecture</text>
+    <text class="quest-desc" x="613" y="248">Secure, well-structured backends</text>
+
+    <circle cx="452" cy="266" r="4" fill="#f0883e"/>
+    <text class="quest-title" x="464" y="270">Cloud Deployment &amp; DevOps</text>
+    <text class="quest-desc" x="655" y="270">Shipping production systems</text>
+  </g>
+</svg>

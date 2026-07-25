@@ -10,6 +10,10 @@
 
 </div>
 
+<p align="center">
+  <img src="./img/main/hero-card-anwar.svg" alt="Anwar Hossain profile card" width="100%" />
+</p>
+
 # Hi 👋 I’m Anwar Hossain  
 ## Full Stack Engineer (MERN Focused)
 

@@ -117,4 +117,26 @@ Then go to **Actions** → **GitHub-Profile-3D-Contrib** → **Run workflow** to
 
 ---
 
+## 🤝 Wanna Build Something Together?
+
+I'm always up for interesting conversations about full-stack architecture, scaling MERN apps, or just geeking out over a well-optimized query. If you're building something ambitious — let's talk.
+
+<div align="center">
+
+<a href="https://www.linkedin.com/in/anwarhossain1/"><img src="https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+&nbsp;
+<a href="mailto:irishkhan33@gmail.com"><img src="https://img.shields.io/badge/Send_an_Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+&nbsp;
+<a href="https://github.com/anwarhossain1"><img src="https://img.shields.io/badge/Follow_on_GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+
+<br/><br/>
+
+![](https://komarev.com/ghpvc/?username=anwarhossain1&color=1f6feb&style=flat-square&label=Profile+Views)
+
+</div>
+
+---
+
 ⭐ Always building. Always learning. Always shipping.
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0e17,50:0d1525,100:1f6feb&height=100&section=footer"/>

@@ -39,14 +39,6 @@ I work across the full development lifecycle — from designing REST APIs and da
 
 ---
 
-## 📲 Connect With Me
-
-[![LinkedIn](./img/main/linkedin.png)](https://www.linkedin.com/in/anwarhossain1/)  
-[![Gmail](./img/main/gmail.png)](mailto:irishkhan33@gmail.com)  
-[![Facebook](./img/main/facebook.png)](https://www.facebook.com/anwarirish)
-
----
-
 ## 🛠 Languages and Tools
 
 <p align="center">
